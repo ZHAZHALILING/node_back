@@ -4,7 +4,7 @@ var router = express.Router();
 const sqlite3 = require('sqlite3').verbose();
 // const Database = require('better-sqlite3');
 // 连接你的数据库文件（路径：项目根目录的 my_first_db.db）
-const db = new sqlite3.Database('./tmp/my_first_db.db');
+// const db = new sqlite3.Database('./tmp/my_first_db.db');
 /* GET home page. */
 router.get('/', function(req, res,) {
   res.json({ message: 'hello world112!' });
