@@ -3,7 +3,7 @@ var router = express.Router();
 // 引入 better-sqlite3
 const Database = require('better-sqlite3');
 // 连接你的数据库文件（路径：项目根目录的 my_first_db.db）
-const db = new Database('./my_first_db.db');
+const db = new Database('/tmp/my_first_db.db');
 // 先引入 auth 中间件
 const auth = require('../middleware/auth');
 

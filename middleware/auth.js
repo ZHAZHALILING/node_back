@@ -1,6 +1,6 @@
 const crypto = require('crypto');
 const Database = require('better-sqlite3');
-const db = new Database('./my_first_db.db');
+const db = new Database('/tmp/my_first_db.db');
 
 /**
  * 鉴权中间件：验证token是否有效

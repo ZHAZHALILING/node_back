@@ -5,10 +5,10 @@ var logger = require('morgan');
 
 // const schedule = require('node-schedule');
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-var usersLoginRouter = require('./routes/login');
-var caterRouter = require('./routes/cater');
-var uploadRouter = require('./routes/upload');
+// var usersRouter = require('./routes/users');
+// var usersLoginRouter = require('./routes/login');
+// var caterRouter = require('./routes/cater');
+// var uploadRouter = require('./routes/upload');
 var app = express();
 
 app.use(logger('dev'));
@@ -18,10 +18,10 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/api', indexRouter);
-app.use('/api/users', usersRouter);
-app.use('/api/login', usersLoginRouter);
-app.use('/api/cater', caterRouter);
-app.use('/api/upload', uploadRouter);
+// app.use('/api/users', usersRouter);
+// app.use('/api/login', usersLoginRouter);
+// app.use('/api/cater', caterRouter);
+// app.use('/api/upload', uploadRouter);
 
 
 

@@ -8,7 +8,7 @@ router.get('/', function (req, res,) {
     res.json({ message: 'hello world1!' });
 });
 // 连接数据库
-const db = new Database('./my_first_db.db');
+const db = new Database('/tmp/my_first_db.db');
 
 // 配置上传目录
 const uploadDir = path.join(__dirname, '../public/uploads');

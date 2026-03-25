@@ -9,7 +9,7 @@ const authMiddleware = require('../middleware/auth');
 //   res.json({ message: 'hello world1!' });
 // });
 // 连接数据库
-const db = new Database('./my_first_db.db');
+const db = new Database('/tmp/my_first_db.db');
 
 // 1. 生成随机token
 const generateToken = (openid) => {

@@ -3,10 +3,10 @@ var router = express.Router();
 // 引入 better-sqlite3
 const Database = require('better-sqlite3');
 // 连接你的数据库文件（路径：项目根目录的 my_first_db.db）
-const db = new Database('./my_first_db.db');
+const db = new Database('./tmp/my_first_db.db');
 /* GET home page. */
 router.get('/', function(req, res,) {
-  res.json({ message: 'hello world!' });
+  res.json({ message: 'hello world111!' });
 });
 
 /* 新增：查询 users 表所有数据的接口 */
